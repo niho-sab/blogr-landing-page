@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Blogr</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <!-- Hamburger Button for Mobile -->
+  <button class="hamburger-btn" id="menu-btn">
+    <img src="images/icon-hamburger.svg" alt="icon hamburger">
+  </button>
+
+  <div class="top">
+    <div><img src="images/logo.svg" alt="logo"></div>
+
+    <!-- Desktop Navigation -->
+    <div class="top-buttons">
+      <div class="dropdown-menu">
+        <button type="button" class="drop-btn" aria-expanded="false">Products</button>
+        <div class="arrow-btn"><img src="images/icon-arrow-light.svg" alt="arrow icon"></div>
+        <nav class="nav-contents">
+          <a href="">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+        </nav>
+      </div>
+
+      <div class="dropdown-menu">
+        <button type="button" class="drop-btn" aria-expanded="false">Company</button>
+        <div class="arrow-btn"><img src="images/icon-arrow-light.svg" alt="arrow icon"></div>
+        <nav class="nav-contents">
+          <a href="#">About</a> <br>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Team</a>
+        </nav>
+      </div>
+
+      <div class="dropdown-menu">
+        <button type="button" class="drop-btn" aria-expanded="false">Connect</button>
+        <div class="arrow-btn"><img src="images/icon-arrow-light.svg" alt="arrow icon"></div>
+        <nav class="nav-contents">
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">LinkedIn</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Login / Sign Up Buttons -->
+    <div class="login-sign-btn">
+      <button>Login</button>
+      <button>Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <button class="close-btn"><img src="images/icon-close.svg" alt="close icon"></button>
+    <div class="menu">
+      <div class="dropdown">
+        <button class="dropdown-btn">Product</button>
+        <img src="images/icon-arrow-dark.svg" alt="">
+        <ul class="dropdown-content">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-btn">Company</button>
+        <img src="images/icon-arrow-dark.svg" alt="">
+        <ul class="dropdown-content">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-btn">Connect</button>
+        <img src="images/icon-arrow-dark.svg" alt="">
+        <ul class="dropdown-content show">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="auth">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="signup">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>A modern publishing platform</h1>
+    <h6>Grow your audience and build your online brand</h6>
+    <div class="hero-buttons">
+      <button class="start-btn">Start for Free</button>
+      <button class="learn-btn">Learn More</button>
+    </div>
+  </section>
+</header>
+
+<h2 class="h2">Designed for the future</h2>
+
+<main class="main">
+  <!-- Feature Section -->
+  <section class="feature-section">
+    <div class="feature-text">
+      <div>
+        <h3>Introducing an extensible editor</h3>
+        <p>Blogr features an intuitive interface which lets you focus on creating content. The editor supports multiple blogs and allows easy manipulation of images, videos, and Markdown. Plugins and themes provide ways to add functionality or change the look.</p>
+      </div>   
+      <div>
+        <h3>Robust content management</h3>
+        <p>Flexible content management enables users to easily move through posts. Add customized categories, sections, or formats. With this functionality, you’re in full control.</p>
+      </div>   
+    </div>
+    <div class="feature-img"></div>
+  </section>
+
+  <!-- Infrastructure Section -->
+  <section class="infrastructure">
+    <div class="infrastructure-content">
+      <div class="phones">
+        <img src="images/illustration-phones.svg" alt="Phones">
+      </div>
+      <div class="text">
+        <h2>State of the Art Infrastructure</h2>
+        <p>Worldwide data centers provide ultra-fast connectivity. Your site will load instantly, keeping your site competitive.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Last Section -->
+  <section class="last-section">
+    <div class="last-section-img"></div>
+    <div class="last-section-txt">
+      <div>
+        <h2>Free, open, simple</h2>
+        <p>Blogr is a free and open source application backed by a large developer community. Supports code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and Google Analytics.</p>
+      </div>
+      <div>
+        <h2>Powerful tooling</h2>
+        <p>Simple CLI tool makes customization and deployment easy, yet powerful for complex sites.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div><img src="images/logo.svg" alt="logo"></div>
+  <div class="footer-items">
+    <h5>Product</h5>
+    <a href="#">Overview</a>
+    <a href="#">Pricing</a>
+    <a href="#">Marketplace</a>
+    <a href="#">Features</a>
+    <a href="#">Integrations</a>
+  </div>
+  <div class="footer-items">
+    <h5>Company</h5>
+    <a href="#">About</a>
+    <a href="#">Team</a>
+    <a href="#">Blog</a>
+    <a href="#">Careers</a>
+  </div>
+  <div class="footer-items">
+    <h5>Connect</h5>
+    <a href="#">Contact</a>
+    <a href="#">Newsletter</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
